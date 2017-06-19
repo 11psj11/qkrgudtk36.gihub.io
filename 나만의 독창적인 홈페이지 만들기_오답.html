@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>나만의 독창적인 홈페이지 만들기_오답</title>
+    <style>
+        /* 배경그림 지정 FullScreenBackground
+        참고 : https://css-tricks.com/perfect-full-page-background-image/*/
+        html {
+            background: url(background_img.jpg) no-repeat center center fixed;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        /* 중앙 정렬 레이아웃 */
+        * {margin: 0; padding: 0;}
+        body {
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        #container {
+            width: 500px; height: 250px;
+            position: absolute;
+            left: 50%; top: 50%;
+            margin-left: -250px;
+            margin-top: -125px;
+        }
+
+        /* 글자 속성 */
+        .font_english { font-family: 'Dragon is coming'; }
+        .font_korea { font-family: '문체부 궁체 정자체'; }
+        .font_color { color: white; }
+        .font_bold { font-weight: bold;}
+        .font_big { font-size: 10em; }
+        .font_middle { font-size: 4em; }
+        .font_center { text-align: center;}
+
+        /* 링크의 밑줄 제거 */
+        a { text-decoration: none;}
+    </style>
+  </head>
+  <body>
+    <!-- 배경음악 지정 - 자동 재생, 무한 반복 -->
+    <audio src="background_music.mp3" autoplay loop /></audio>
+
+    <!-- 첫 화면 -->
+    <div id="container">
+        <p class="font_english font_color font_center font_big">Wrong Answer</p>
+            <div class="font_center">
+                <a href="나만의 독창적인 홈페이지 만들기_문제1.html" class="font_english font_color font_center font_middle">ReStart</a>
+            </div>
+    </div>
+  </body>
+</html>

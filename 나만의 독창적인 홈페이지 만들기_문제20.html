@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>나만의 독창적인 홈페이지 만들기_문제20</title>
+    <!-- 경고창 -->
+    <script>
+        alert('문제20번을 틀릴 경우 처음부터 다시 풀어야 합니다.');
+    </script>
+    <style>
+      /* 배경그림 지정 */
+      html {
+          background: url(background_img.jpg) no-repeat center center fixed;
+          -moz-background-size: cover;
+          -wwebkit-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+      }
+
+      /* 중앙 정렬 레이아웃 */
+      * {margin: 0; padding: 0;}
+      body {
+          margin: 0 auto;
+          width: 960px;
+      }
+
+      #container {
+          width: 500px; height: 250px;
+          position: absolute;
+          left: 50%; top: 50%;
+          margin-left: -250px;
+          margin-top: -125px;
+      }
+
+      /* table 중앙 정렬 - 참고 : http://aboooks.tistory.com/93 */
+      table {
+          width: 60%;
+          height: 100px;
+          margin: auto;
+          text-align: center;
+      }
+
+      /* 글자 속성 */
+      .font_english { font-family: 'Dragon is coming'; }
+      .font_korea { font-family: '문체부 궁체 정자체'; }
+      .font_color { color: white; }
+      .font_color_1 { color: black; }
+      .font_bold { font-weight: bold; }
+      .font_big { font-size: 10em; }
+      .font_middle { font-size: 4em; }
+      .font_small { font-size: 2em; }
+      .font_center { text-align: center; }
+      .font_righttop { text-align: right; top;}
+
+      /* 링크의 밑줄 제거 */
+      a { text-decoration: none;}
+
+    </style>
+  </head>
+  <body>
+    <!-- 배경음악 지정 - 자동 재생, 무한 반복 -->
+    <audio src="background_music.mp3" autoplay loop /></audio>
+
+    <!-- 문제 1 -->
+    <div id="container">
+        <p class="font_korea font_color font_bold font_center">문제 20. 다음 그림을 보고 문제를 해결하시오.</p><br><br>
+
+          <!-- 그림 가운데 정렬 - 참고 : http://mwultong.blogspot.com/2006/12/html-css-img-center-right.html-->
+          <div align="center">
+            <img src="문제 20.png" alt="문제 20" width="400" />
+          </div>
+
+          <!-- 선택지 -->
+          <table>
+              <tr>
+                <td>
+                  <a href="나만의 독창적인 홈페이지 만들기_Finish.html" class="font_korea font_color font_bold font_center">1. 5</a>
+                </td>
+                <td>
+                  <a href="나만의 독창적인 홈페이지 만들기_오답.html" class="font_korea font_color font_bold font_center">2. 7</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="나만의 독창적인 홈페이지 만들기_오답.html" class="font_korea font_color font_bold font_center">3. 8</a>
+                </td>
+                <td>
+                  <a href="나만의 독창적인 홈페이지 만들기_오답.html" class="font_korea font_color font_bold font_center">4. 9</a>
+                </td>
+              </tr>
+          </table>
+    </div>
+  </body>
+</html>
